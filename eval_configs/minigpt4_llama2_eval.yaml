@@ -5,7 +5,7 @@ model:
   end_sym: "</s>"
   low_resource: True
   prompt_template: '[INST] {} [/INST] '
-  ckpt: '/drive/MyDrive/pretrained_minigpt4_llama2_7b.pth'
+  ckpt: '/dbfs/FileStore/shared_uploads/sameer.sharma@meesho.com/pretrained_minigpt4_llama2_7b.pth'
 
 
 datasets:
