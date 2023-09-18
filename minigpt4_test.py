@@ -1,15 +1,15 @@
-# import argparse
-# import os
-# import random
-# import numpy as np
-# import torch
-# import torch.backends.cudnn as cudnn
-# from PIL import Image
-# from minigpt4.common.config import Config
-# from minigpt4.common.dist_utils import get_rank
-# from minigpt4.common.registry import registry
-# from minigpt4.conversation.conversation import Chat, CONV_VISION_LLama2
-# from minigpt4.models import *
+import argparse
+import os
+import random
+import numpy as np
+import torch
+import torch.backends.cudnn as cudnn
+from PIL import Image
+from minigpt4.common.config import Config
+from minigpt4.common.dist_utils import get_rank
+from minigpt4.common.registry import registry
+from minigpt4.conversation.conversation import Chat, CONV_VISION_LLama2
+from minigpt4.models import *
 
 # def parse_args():
 #     parser = argparse.ArgumentParser(description="MiniGPT-4 CLI")
