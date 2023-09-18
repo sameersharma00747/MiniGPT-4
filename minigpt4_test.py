@@ -13,10 +13,16 @@ from minigpt4.models import *
 
 def parse_args():
     parser = argparse.ArgumentParser(description="MiniGPT-4 CLI")
-    parser.add_argument("--cfg-path", default="eval_configs/minigpt4_llama2_eval.yaml", help="path to configuration file.")
+    parser.add_argument("--cfg-path", required=True, help="path to configuration file.")
     parser.add_argument("--gpu-id", type=int, default=0, help="specify the GPU to load the model.")
     parser.add_argument("--image-path", required=True, help="path to the image you want to use.")
     parser.add_argument("--user-input", type=str, required=True, help="user input message for chatbot.")
+    parser.add_argument(
+        "--options",
+        nargs="+",
+        help="override some settings in the used config, the key-value pair "
+        "in xxx=yyy format will be merged into the config file.",
+    )
     args = parser.parse_args()
     return args
 
